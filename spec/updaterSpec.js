@@ -110,4 +110,12 @@ describe("updater-test", function() {
 		);
 		expect(item.quality).toBe(0);
 	});
+
+	it("makes quality of Conjured items to decrease 2 times faster", function() {
+		var item = createAndUpdateItem(
+			{name:'Conjured', 
+			quality:10}
+		);
+		expect(item.quality).toBe(8);
+	});
 });
