@@ -62,11 +62,11 @@ describe("updater-test", function() {
 		expect(item.quality).toBe(50);
 	});
 
-	/*xit("does not affect Sulfuras' properties", function() {
-		var item = createAndUpdateItem({name:'Sulfuras', quality:80, sell_in:0});
+	it("does not affect Sulfuras' properties", function() {
+		var item = createAndUpdateItem({name:'Sulfuras, Hand of Ragnaros', quality:80, sell_in:0});
 		expect(item.quality).toBe(80);
 		expect(item.sell_in).toBe(0);
-	});*/
+	});
 
 	it("increases Backstage passes' quality by 1 when sell_in is more than 10", function() {
 		var item = createAndUpdateItem(
